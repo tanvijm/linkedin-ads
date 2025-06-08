@@ -1,0 +1,226 @@
+.resultsContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resultCard {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.resultHeader {
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.resultTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.resultContent {
+  padding: 2rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.traitsList,
+.strengthsList,
+.challengesList {
+  list-style: none;
+  padding: 0;
+}
+
+.traitsList li,
+.strengthsList li,
+.challengesList li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.traitsList li:before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+}
+
+.strengthsList li:before {
+  content: "💪";
+  position: absolute;
+  left: 0;
+}
+
+.challengesList li:before {
+  content: "🎯";
+  position: absolute;
+  left: 0;
+}
+
+.advice {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 4px solid #667eea;
+}
+
+.advice h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.75rem;
+}
+
+.advice p {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.actions {
+  padding: 2rem;
+  border-top: 1px solid #f3f4f6;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.shareButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.875rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.shareButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.retakeButton {
+  background: transparent;
+  color: #6b7280;
+  border: 2px solid #e5e7eb;
+  padding: 0.875rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.retakeButton:hover {
+  border-color: #d1d5db;
+  color: #4b5563;
+}
+
+.allTypes {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.allTypes h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+.typeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.typePreview {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid #f3f4f6;
+  transition: all 0.2s ease;
+}
+
+.typePreview.current {
+  border-color: #667eea;
+  background: #ede9fe;
+}
+
+.typePreview:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.typeEmoji {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.typeName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resultsContainer {
+    margin: 1rem;
+  }
+  
+  .resultHeader {
+    padding: 1.5rem;
+  }
+  
+  .emoji {
+    font-size: 3rem;
+  }
+  
+  .resultTitle {
+    font-size: 2rem;
+  }
+  
+  .resultContent {
+    padding: 1.5rem;
+  }
+  
+  .actions {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .typeGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
