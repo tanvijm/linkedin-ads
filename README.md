@@ -1,41 +1,48 @@
-# What Type of Demand Gen Marketer Are You? Quiz
+# How Mature Is Your Demand Gen Strategy? Assessment
 
-An interactive personality quiz that helps demand generation marketers discover their unique marketing style and approach.
+An interactive maturity assessment that helps demand generation professionals understand their strategic evolution and identify growth opportunities.
 
-## 🎯 Quiz Results Types
+## 🎯 Maturity Levels
 
-### 🧪 The Experimenter
-- Always testing new channels and tactics
-- Thrives on innovation and discovery
-- Comfortable with uncertainty and failure
-- Energized by change and possibilities
+### 🎯 Level 1: Gut-feel Warrior
+- Intuition-driven decisions and basic tactics
+- Manual processes with simple tools
+- Individual campaigns without coordination
+- Basic success metrics
 
-### 📊 The Attribution Analyst  
-- Data-driven decision maker
-- Obsessed with ROI and measurement
-- Optimizes for efficiency and performance
-- Skeptical without proof of results
+### 📊 Level 2: Spreadsheet Ninja  
+- Data collection and systematic analysis
+- Marketing automation platforms
+- Detailed buyer personas and lead scoring
+- ROI tracking and planning
 
-### 📋 The Playbook Perfectionist
-- Process-oriented and systematic
-- Creates detailed frameworks and documentation
-- Values consistency and reliability
-- Plans thoroughly before execution
+### 🎪 Level 3: Multi-touch Tactician
+- Coordinated multi-channel campaigns
+- Sophisticated attribution modeling
+- Account-based marketing strategies
+- Integrated martech stack
 
-### 🎨 The Creative Closer
-- Brand-focused with creative flair
-- Leads with storytelling and emotion
-- Creates memorable, differentiated campaigns
-- Builds lasting customer connections
+### 🎼 Level 4: Signal-based Orchestrator
+- Intent-driven and predictive strategies
+- AI-powered personalization
+- Real-time campaign optimization
+- Advanced analytics and forecasting
+
+### 🤖 Level 5: Agentic GTM Ops Master
+- AI-powered autonomous operations
+- Self-optimizing campaign systems
+- Generative AI for content creation
+- Predictive demand forecasting
 
 ## 🚀 Features
 
-- **Interactive Quiz**: 8 thoughtfully crafted questions
-- **Instant Results**: Immediate personality assessment
-- **Detailed Insights**: Comprehensive breakdown of traits, strengths, and growth opportunities
-- **Social Sharing**: Easy sharing of results
-- **Responsive Design**: Works on all devices
-- **No Email Required**: Take the quiz anonymously
+- **Comprehensive Assessment**: 10 strategic questions covering key demand gen areas
+- **Instant Maturity Score**: Numerical score from 1.0-5.0 with detailed analysis
+- **Level-based Results**: Clear maturity level identification with growth path
+- **Next Steps Guidance**: Specific recommendations for advancing to the next level
+- **Visual Progress**: See your position on the maturity spectrum
+- **Social Sharing**: Share your maturity level on LinkedIn
+- **No Email Required**: Take the assessment anonymously
 
 ## 🛠 Tech Stack
 
@@ -62,36 +69,46 @@ npm run start
 ## 🎨 Design Features
 
 - Beautiful gradient backgrounds
+- Level-based color coding
 - Smooth animations and transitions
 - Mobile-first responsive design
-- Accessible color contrasts
+- Progress visualization
 - Modern card-based layouts
 
-## 📊 Quiz Methodology
+## 📊 Assessment Methodology
 
-The quiz uses a scoring system that maps responses to four distinct demand generation personality types. Each question is designed to reveal preferences around:
+The assessment uses a sophisticated scoring system that evaluates 10 key areas:
 
-- Risk tolerance and experimentation
-- Data vs. intuition decision making
-- Process vs. flexibility preferences
-- Creative vs. analytical thinking
-- Short-term vs. long-term focus
+1. **Campaign Measurement** - How you track and analyze success
+2. **Audience Targeting** - Your approach to identifying prospects
+3. **Campaign Coordination** - Level of multi-channel orchestration
+4. **Technology Stack** - Tools and platforms used
+5. **Lead Management** - Scoring and qualification processes
+6. **Content Strategy** - Planning and personalization approach
+7. **Optimization** - Testing and improvement methods
+8. **Sales Alignment** - Coordination and handoff processes
+9. **Demand Forecasting** - Predictive capabilities
+10. **Automation Level** - Degree of operational automation
+
+Each question maps to one of 5 maturity levels, and your final score determines your overall maturity stage.
 
 ## 🔗 Sharing & Virality
 
 - Native Web Share API support
 - Fallback clipboard sharing
-- Social media optimized meta tags
-- Engaging result descriptions perfect for LinkedIn sharing
+- LinkedIn-optimized sharing messages
+- Maturity level badges for profiles
+- Progress tracking and evolution stories
 
 ## 🎯 Target Audience
 
-- Demand generation marketers
-- Growth marketers
-- Digital marketing professionals
-- Marketing team leads
-- B2B marketing practitioners
+- Demand generation professionals
+- Marketing operations teams
+- GTM strategy leaders
+- Revenue operations professionals
+- B2B marketing executives
+- Marketing consultants and agencies
 
 ---
 
-**Take the quiz and discover your demand generation personality!**
+**Assess your demand gen maturity and discover your growth path!**

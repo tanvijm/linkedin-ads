@@ -27,19 +27,19 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>What Type of Demand Gen Marketer Are You? | Free Quiz</title>
-        <meta name="description" content="Discover your demand generation marketing personality! Take our fun quiz to find out if you're The Experimenter, Attribution Analyst, Playbook Perfectionist, or Creative Closer." />
-        <meta name="keywords" content="demand generation, marketing quiz, marketing personality, demand gen marketer, marketing assessment" />
+        <title>How Mature Is Your Demand Gen Strategy? | Free Assessment</title>
+        <meta name="description" content="Assess your demand generation maturity level! Discover if you're a Gut-feel Warrior, Spreadsheet Ninja, Multi-touch Tactician, Signal-based Orchestrator, or Agentic GTM Ops Master." />
+        <meta name="keywords" content="demand generation maturity, marketing assessment, GTM strategy, demand gen levels, marketing evolution" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         
-        <meta property="og:title" content="What Type of Demand Gen Marketer Are You? | Free Quiz" />
-        <meta property="og:description" content="Discover your demand generation marketing personality! Take our fun quiz to find out your marketing type." />
+        <meta property="og:title" content="How Mature Is Your Demand Gen Strategy? | Free Assessment" />
+        <meta property="og:description" content="Assess your demand generation maturity level and discover your strategic evolution stage!" />
         <meta property="og:type" content="website" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="What Type of Demand Gen Marketer Are You?" />
-        <meta name="twitter:description" content="Discover your demand generation marketing personality with our fun quiz!" />
+        <meta name="twitter:title" content="How Mature Is Your Demand Gen Strategy?" />
+        <meta name="twitter:description" content="Assess your demand generation maturity level with our strategic assessment!" />
         
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -48,36 +48,40 @@ export default function Home() {
         <div className={styles.container}>
           {!quizStarted && !quizCompleted && (
             <div className={styles.welcomeSection}>
-              <h1 className={styles.title}>What Type of Demand Gen Marketer Are You?</h1>
+              <h1 className={styles.title}>How Mature Is Your Demand Gen Strategy?</h1>
               <p className={styles.subtitle}>
-                Discover your demand generation marketing personality and unlock insights about your unique approach to driving growth!
+                Assess your demand generation maturity level and discover where you stand on the strategic evolution ladder!
               </p>
               
-              <div className={styles.marketingTypes}>
-                <div className={styles.typeCard}>
-                  <h3>🧪 The Experimenter</h3>
-                  <p>Always testing new channels and tactics</p>
+              <div className={styles.maturityLevels}>
+                <div className={styles.levelCard}>
+                  <h3>🎯 Level 1: Gut-feel Warrior</h3>
+                  <p>Intuition-driven decisions and basic tactics</p>
                 </div>
-                <div className={styles.typeCard}>
-                  <h3>📊 The Attribution Analyst</h3>
-                  <p>Data-driven and ROI-focused</p>
+                <div className={styles.levelCard}>
+                  <h3>📊 Level 2: Spreadsheet Ninja</h3>
+                  <p>Data collection and manual analysis</p>
                 </div>
-                <div className={styles.typeCard}>
-                  <h3>📋 The Playbook Perfectionist</h3>
-                  <p>Process-oriented and systematic</p>
+                <div className={styles.levelCard}>
+                  <h3>🎪 Level 3: Multi-touch Tactician</h3>
+                  <p>Coordinated campaigns across channels</p>
                 </div>
-                <div className={styles.typeCard}>
-                  <h3>🎨 The Creative Closer</h3>
-                  <p>Brand-focused with creative flair</p>
+                <div className={styles.levelCard}>
+                  <h3>🎼 Level 4: Signal-based Orchestrator</h3>
+                  <p>Intent-driven and predictive strategies</p>
+                </div>
+                <div className={styles.levelCard}>
+                  <h3>🤖 Level 5: Agentic GTM Ops Master</h3>
+                  <p>AI-powered autonomous operations</p>
                 </div>
               </div>
 
               <button className={styles.startButton} onClick={handleStartQuiz}>
-                Take the Quiz (2 minutes)
+                Assess My Strategy (3 minutes)
               </button>
               
               <p className={styles.disclaimer}>
-                Free quiz • No email required • Get instant results
+                Free assessment • No email required • Get instant maturity score
               </p>
             </div>
           )}

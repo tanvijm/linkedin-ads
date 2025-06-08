@@ -1,117 +1,160 @@
 import styles from '../styles/Results.module.css';
 
-const resultTypes = {
-  experimenter: {
-    title: "The Experimenter",
-    emoji: "🧪",
-    description: "You're the fearless pioneer of demand generation! You thrive on testing new channels, tactics, and technologies.",
-    traits: [
-      "Always first to try emerging platforms",
-      "Comfortable with uncertainty and failure",
-      "Constantly seeks new growth opportunities",
-      "Energized by innovation and change"
+const maturityLevels = {
+  1: {
+    title: "Gut-feel Warrior",
+    emoji: "🎯",
+    level: "Level 1",
+    description: "You're in the early stages of demand generation maturity. You rely on intuition and basic tactics, which is a great foundation to build upon!",
+    characteristics: [
+      "Makes decisions based on intuition and experience",
+      "Uses basic tools and manual processes",
+      "Focuses on individual campaigns and tactics",
+      "Measures success through simple metrics"
     ],
     strengths: [
-      "Discovers breakthrough strategies others miss",
-      "Adapts quickly to market changes",
-      "Builds resilient, diversified programs",
-      "Inspires teams to think outside the box"
+      "Agile and can pivot quickly",
+      "Strong customer intuition and market sense",
+      "Entrepreneurial approach to growth",
+      "Not over-complicated by complex systems"
     ],
-    challenges: [
-      "May lack focus on proven strategies",
-      "Could struggle with measurement consistency",
-      "Might overwhelm team with too many tests"
+    nextSteps: [
+      "Start tracking key metrics systematically",
+      "Implement basic marketing automation",
+      "Create standardized processes and templates",
+      "Begin A/B testing your campaigns"
     ],
-    advice: "Your superpower is discovery, but remember to balance experimentation with optimization of your wins. Set aside budget for both testing and scaling proven tactics.",
+    advice: "Your intuition is valuable, but adding data will supercharge your results. Start with simple metrics and build from there.",
+    color: "#EF4444"
+  },
+  2: {
+    title: "Spreadsheet Ninja",
+    emoji: "📊",
+    level: "Level 2",
+    description: "You've moved beyond gut-feel and are now data-driven! You're building systematic approaches to demand generation with solid measurement.",
+    characteristics: [
+      "Tracks metrics systematically in spreadsheets",
+      "Uses marketing automation platforms",
+      "Creates detailed buyer personas",
+      "Implements basic lead scoring"
+    ],
+    strengths: [
+      "Data-driven decision making",
+      "Systematic approach to campaigns",
+      "Good grasp of key metrics and ROI",
+      "Building scalable processes"
+    ],
+    nextSteps: [
+      "Implement multi-touch attribution",
+      "Integrate more sophisticated tools",
+      "Develop account-based marketing strategies",
+      "Create cross-channel campaign orchestration"
+    ],
+    advice: "You're building a solid foundation! Focus on connecting the dots between touchpoints to understand the full customer journey.",
+    color: "#F59E0B"
+  },
+  3: {
+    title: "Multi-touch Tactician",
+    emoji: "🎪",
+    level: "Level 3",
+    description: "You're orchestrating sophisticated multi-channel campaigns with integrated attribution. You understand the complexity of modern B2B buying!",
+    characteristics: [
+      "Orchestrates multi-channel campaigns",
+      "Uses sophisticated attribution modeling",
+      "Maps content to buyer journey stages",
+      "Implements account-based marketing"
+    ],
+    strengths: [
+      "Understands complex customer journeys",
+      "Coordinates campaigns across channels",
+      "Uses advanced attribution modeling",
+      "Builds integrated martech stacks"
+    ],
+    nextSteps: [
+      "Implement intent data and predictive analytics",
+      "Add AI-powered personalization",
+      "Develop signal-based campaign triggers",
+      "Build predictive lead scoring models"
+    ],
+    advice: "You're in the sweet spot of demand gen maturity. Now focus on predictive insights and real-time personalization to reach the next level.",
     color: "#8B5CF6"
   },
-  analyst: {
-    title: "The Attribution Analyst",
-    emoji: "📊",
-    description: "You're the data-driven mastermind who turns numbers into growth. Every decision is backed by solid metrics and ROI analysis.",
-    traits: [
-      "Makes decisions based on hard data",
-      "Obsessed with measurement and attribution",
-      "Optimizes for efficiency and ROI",
-      "Skeptical without proof of performance"
+  4: {
+    title: "Signal-based Orchestrator",
+    emoji: "🎼",
+    level: "Level 4",
+    description: "You're leveraging intent signals and predictive analytics to orchestrate demand generation at scale. You're operating at an advanced level!",
+    characteristics: [
+      "Uses intent data and predictive analytics",
+      "Triggers campaigns based on buyer signals",
+      "Implements AI-powered personalization",
+      "Leverages machine learning for optimization"
     ],
     strengths: [
-      "Maximizes ROI through data insights",
-      "Builds accountability into programs",
-      "Identifies optimization opportunities",
-      "Provides clear performance visibility"
+      "Predictive and proactive approach",
+      "Uses advanced AI and machine learning",
+      "Real-time campaign optimization",
+      "Sophisticated signal-based triggers"
     ],
-    challenges: [
-      "May miss opportunities that are hard to measure",
-      "Could over-optimize short-term metrics",
-      "Might paralyzed by analysis"
+    nextSteps: [
+      "Explore autonomous AI agents",
+      "Implement generative AI for content",
+      "Build self-optimizing campaign systems",
+      "Develop fully automated GTM operations"
     ],
-    advice: "Your analytical rigor is your strength, but don't let perfect measurement prevent good marketing. Sometimes the best opportunities require a leap of faith backed by directional data.",
-    color: "#059669"
+    advice: "You're operating at an elite level! Consider how autonomous AI agents could further amplify your sophisticated strategies.",
+    color: "#06B6D4"
   },
-  perfectionist: {
-    title: "The Playbook Perfectionist",
-    emoji: "📋",
-    description: "You're the systematic strategist who builds repeatable, scalable demand generation machines through process and planning.",
-    traits: [
-      "Creates detailed processes and playbooks",
-      "Focuses on systematic execution",
-      "Values consistency and reliability",
-      "Plans thoroughly before acting"
+  5: {
+    title: "Agentic GTM Ops Master",
+    emoji: "🤖",
+    level: "Level 5",
+    description: "Welcome to the future! You're leveraging autonomous AI agents to manage demand generation operations. You're at the cutting edge of marketing evolution!",
+    characteristics: [
+      "Uses autonomous AI agents for operations",
+      "AI generates and personalizes content automatically",
+      "Self-optimizing campaign systems",
+      "Predictive demand forecasting with auto-adjustment"
     ],
     strengths: [
-      "Builds scalable, repeatable systems",
-      "Ensures consistent quality execution",
-      "Creates predictable results",
-      "Excellent at team onboarding and training"
+      "Fully autonomous marketing operations",
+      "AI-powered content generation and personalization",
+      "Self-healing and self-optimizing systems",
+      "Predictive and prescriptive analytics"
     ],
-    challenges: [
-      "May be slow to adapt to changes",
-      "Could miss agile opportunities",
-      "Might over-engineer simple solutions"
+    nextSteps: [
+      "Share your learnings with the community",
+      "Continue experimenting with emerging AI capabilities",
+      "Help others advance their maturity",
+      "Build the future of demand generation"
     ],
-    advice: "Your systematic approach creates lasting value, but build flexibility into your processes. The best playbooks evolve with market conditions and new learnings.",
-    color: "#DC2626"
-  },
-  closer: {
-    title: "The Creative Closer",
-    emoji: "🎨",
-    description: "You're the brand storyteller who creates compelling experiences that not only generate demand but build lasting connections.",
-    traits: [
-      "Leads with creative and messaging",
-      "Focuses on brand and experience",
-      "Values storytelling and emotion",
-      "Thinks about long-term brand building"
-    ],
-    strengths: [
-      "Creates memorable, differentiated campaigns",
-      "Builds strong brand equity",
-      "Generates high engagement rates",
-      "Develops emotional customer connections"
-    ],
-    challenges: [
-      "May struggle with direct response optimization",
-      "Could prioritize creativity over conversion",
-      "Might find measurement challenging"
-    ],
-    advice: "Your creative vision drives breakthrough campaigns, but tie your stories to business outcomes. The most powerful marketing combines compelling narratives with measurable results.",
-    color: "#7C3AED"
+    advice: "You're a pioneer! Your role now is to help others on their journey while continuing to push the boundaries of what's possible.",
+    color: "#10B981"
   }
 };
 
 const Results = ({ result, onRestart }) => {
-  const resultData = resultTypes[result];
+  const { level, score } = result;
+  const resultData = maturityLevels[level];
+  
+  const getScoreDescription = (score) => {
+    if (score <= 1.5) return "Foundational stage with lots of growth potential";
+    if (score <= 2.5) return "Building systematic approaches";
+    if (score <= 3.5) return "Well-coordinated and sophisticated";
+    if (score <= 4.5) return "Advanced with predictive capabilities";
+    return "Cutting-edge autonomous operations";
+  };
 
   const handleShare = () => {
+    const text = `I just assessed my demand gen strategy maturity! I'm a ${resultData.title} (${resultData.level}) 🚀 How mature is YOUR strategy? Take the assessment: ${window.location.href}`;
+    
     if (navigator.share) {
       navigator.share({
-        title: `I'm ${resultData.title}!`,
-        text: `I just discovered I'm ${resultData.title} in demand generation marketing! ${resultData.description}`,
+        title: `I'm a ${resultData.title}!`,
+        text: text,
         url: window.location.href
       });
     } else {
-      // Fallback for browsers that don't support Web Share API
-      const text = `I'm ${resultData.title}! ${resultData.description} Take the quiz: ${window.location.href}`;
       navigator.clipboard.writeText(text);
       alert('Result copied to clipboard!');
     }
@@ -122,23 +165,28 @@ const Results = ({ result, onRestart }) => {
       <div className={styles.resultCard}>
         <div className={styles.resultHeader} style={{ backgroundColor: resultData.color }}>
           <div className={styles.emoji}>{resultData.emoji}</div>
-          <h1 className={styles.resultTitle}>You're {resultData.title}!</h1>
+          <h1 className={styles.resultTitle}>{resultData.title}</h1>
+          <div className={styles.levelBadge}>{resultData.level}</div>
+          <div className={styles.scoreInfo}>
+            <div className={styles.score}>Score: {score.toFixed(1)}/5.0</div>
+            <div className={styles.scoreDescription}>{getScoreDescription(score)}</div>
+          </div>
         </div>
         
         <div className={styles.resultContent}>
           <p className={styles.description}>{resultData.description}</p>
           
           <div className={styles.section}>
-            <h3>Your Core Traits</h3>
-            <ul className={styles.traitsList}>
-              {resultData.traits.map((trait, index) => (
-                <li key={index}>{trait}</li>
+            <h3>Your Current Characteristics</h3>
+            <ul className={styles.characteristicsList}>
+              {resultData.characteristics.map((characteristic, index) => (
+                <li key={index}>{characteristic}</li>
               ))}
             </ul>
           </div>
           
           <div className={styles.section}>
-            <h3>Your Superpowers</h3>
+            <h3>Your Strategic Strengths</h3>
             <ul className={styles.strengthsList}>
               {resultData.strengths.map((strength, index) => (
                 <li key={index}>{strength}</li>
@@ -147,40 +195,41 @@ const Results = ({ result, onRestart }) => {
           </div>
           
           <div className={styles.section}>
-            <h3>Growth Opportunities</h3>
-            <ul className={styles.challengesList}>
-              {resultData.challenges.map((challenge, index) => (
-                <li key={index}>{challenge}</li>
+            <h3>Next Level Evolution</h3>
+            <ul className={styles.nextStepsList}>
+              {resultData.nextSteps.map((step, index) => (
+                <li key={index}>{step}</li>
               ))}
             </ul>
           </div>
           
           <div className={styles.advice}>
-            <h3>Advice for {resultData.title}s</h3>
+            <h3>Strategic Advice</h3>
             <p>{resultData.advice}</p>
           </div>
         </div>
         
         <div className={styles.actions}>
           <button className={styles.shareButton} onClick={handleShare}>
-            Share Your Result
+            Share Your Maturity Level
           </button>
           <button className={styles.retakeButton} onClick={onRestart}>
-            Take Quiz Again
+            Retake Assessment
           </button>
         </div>
       </div>
       
-      <div className={styles.allTypes}>
-        <h3>All Demand Gen Marketer Types</h3>
-        <div className={styles.typeGrid}>
-          {Object.entries(resultTypes).map(([key, type]) => (
+      <div className={styles.maturityPath}>
+        <h3>The Demand Gen Maturity Path</h3>
+        <div className={styles.levelGrid}>
+          {Object.entries(maturityLevels).map(([levelNum, levelData]) => (
             <div 
-              key={key} 
-              className={`${styles.typePreview} ${key === result ? styles.current : ''}`}
+              key={levelNum} 
+              className={`${styles.levelPreview} ${parseInt(levelNum) === level ? styles.current : ''} ${parseInt(levelNum) < level ? styles.completed : ''}`}
             >
-              <div className={styles.typeEmoji}>{type.emoji}</div>
-              <div className={styles.typeName}>{type.title}</div>
+              <div className={styles.levelEmoji}>{levelData.emoji}</div>
+              <div className={styles.levelTitle}>{levelData.title}</div>
+              <div className={styles.levelNumber}>{levelData.level}</div>
             </div>
           ))}
         </div>
